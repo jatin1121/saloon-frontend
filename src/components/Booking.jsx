@@ -23,7 +23,7 @@ export default function Booking() {
   };
 
   return (
-    <section className="min-h-screen relative py-20 px-4">
+    <section  className="min-h-screen relative py-20 px-4">
       {/* Background Image with Overlay */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -35,7 +35,7 @@ export default function Booking() {
       </div>
 
       {/* Content Container */}
-      <div className="relative z-10 max-w-4xl mx-auto">
+      <div data-aos="slide-left" className="relative z-10 max-w-4xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4 drop-shadow-lg">

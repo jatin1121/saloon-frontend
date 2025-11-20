@@ -39,10 +39,11 @@ export default function Hero() {
   };
 
   return (
-    <section id="home" className="relative bg-gradient-to-br from-red-50 to-gray-100 overflow-hidden">
+    <section id="home"  className="relative bg-gradient-to-br from-red-50 to-gray-100 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6">
+         <div className="space-y-6" data-aos="fade-right">
+
             <div className="overflow-hidden">
               {slides.map((slide, index) => (
                 <div
@@ -86,7 +87,8 @@ export default function Hero() {
             </div>
           </div>
 
-    <div className="relative">
+    <div className="relative" data-aos="fade-left">
+
   <div className="bg-white rounded-2xl shadow-2xl p-8 overflow-hidden">
 
     {/* Background Image */}

@@ -191,7 +191,7 @@ const servicesData = [
 
 export default function ServicesSection() {
   return (
-    <section className="relative bg-[#FFF6F2] py-20">
+    <section data-aos="zoom-out"  className="relative bg-[#FFF6F2] py-20">
       <div className="max-w-7xl mx-auto px-6">
         
         {/* HEADING */}
