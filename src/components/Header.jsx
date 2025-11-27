@@ -6,7 +6,7 @@ export default function Header() {
   const [isServicesOpen, setIsServicesOpen] = useState(false);
 
   return (
-    <header className="bg-white shadow-sm sticky top-0 z-50">
+    <header className="bg-gradient-to-br from-gray-900 via-gray-800 to-black shadow-sm sticky top-0 z-50">
       <div className="max-w-7xl mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-8 py-3">
         {/* Left Section - Logo */}
         <div className="flex items-center">
@@ -19,7 +19,7 @@ export default function Header() {
               className="object-contain"
             />
           </a> */}
-          <h1 className="text-1xl sm:text-2xl font-bold text-gray-900 tracking-wide">RUCHI MISHRA<span className="text-red-600"> MAKEOVER</span> </h1>
+          <h1 className="text-1xl sm:text-2xl font-bold text-white tracking-wide">RUCHI MISHRA<span className="text-1xl sm:text-2xl text-red-500  font-semibold"> MAKEOVER</span> </h1>
         </div>
 
         {/* Right Section - Desktop */}
@@ -67,10 +67,10 @@ export default function Header() {
 
           {/* Navigation Menu */}
           <nav className="flex space-x-6 text-[15px] font-medium uppercase">
-            <a href="#home" className="text-gray-800 hover:text-red-600">
+            <a href="#home" className=" text-white hover:text-red-600">
               Home
             </a>
-            <a href="#about" className="text-gray-800 hover:text-red-600">
+            <a href="#about" className="text-white hover:text-red-600">
               About Us
             </a>
 
@@ -80,7 +80,7 @@ export default function Header() {
               onMouseEnter={() => setIsServicesOpen(true)}
               onMouseLeave={() => setIsServicesOpen(false)}
             >
-              <button className="flex items-center text-gray-800 hover:text-red-600">
+              <button className="flex items-center text-white hover:text-red-600">
                 Services <ChevronDown className="ml-1 w-4 h-4" />
               </button>
               {isServicesOpen && (
@@ -135,7 +135,7 @@ export default function Header() {
                 <a
                   key={item}
                   href={`#${item.toLowerCase()}`}
-                  className="text-gray-800 hover:text-red-600"
+                  className="text-white hover:text-red-600"
                 >
                   {item}
                 </a>

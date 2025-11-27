@@ -95,14 +95,14 @@
 //   );
 // }
 
-import { Brush, Scissors, Flower2, Hand, Sun, Sparkles, Package } from "lucide-react";
+// REMOVE lucide-react imports
+// import { Brush, Scissors, Flower2, Hand, Sun, Sparkles, Package } from "lucide-react";
 
 const servicesData = [
   {
     category: "Makeup Services",
-    icon: Brush,
+    image: ".././../public/beautysalloon.jpg",
     color: "bg-pink-100",
-    iconColor: "text-pink-600",
     services: [
       "Bridal Makeup",
       "Party Makeup",
@@ -113,9 +113,8 @@ const servicesData = [
   },
   {
     category: "Hair Services",
-    icon: Scissors,
+    image: ".././../public/hairservice.jpg",
     color: "bg-purple-100",
-    iconColor: "text-purple-600",
     services: [
       "Haircut",
       "Hair Spa",
@@ -126,9 +125,8 @@ const servicesData = [
   },
   {
     category: "Skin & Facial",
-    icon: Flower2,
+    image: "../../public/face-treatment.jpg",
     color: "bg-orange-100",
-    iconColor: "text-orange-600",
     services: [
       "Facials",
       "Cleanups",
@@ -140,9 +138,8 @@ const servicesData = [
   },
   {
     category: "Nail & Hand-Foot Care",
-    icon: Hand,
+    image: "../../public/nail-treatment.jpg",
     color: "bg-red-100",
-    iconColor: "text-red-600",
     services: [
       "Manicure",
       "Pedicure",
@@ -153,9 +150,8 @@ const servicesData = [
   },
   {
     category: "Waxing & Threading",
-    icon: Sun,
+    image: "../../public/young-beauty-saloon.jpg",
     color: "bg-yellow-100",
-    iconColor: "text-yellow-600",
     services: [
       "Full Body Waxing",
       "Eyebrow Threading",
@@ -165,9 +161,8 @@ const servicesData = [
   },
   {
     category: "Spa & Relaxation",
-    icon: Sparkles,
+    image: "../../public/spa.jpg",
     color: "bg-blue-100",
-    iconColor: "text-blue-600",
     services: [
       "Body Spa",
       "Head Massage",
@@ -177,9 +172,8 @@ const servicesData = [
   },
   {
     category: "Packages",
-    icon: Package,
+    image: "../../public/packages.jpg",
     color: "bg-green-100",
-    iconColor: "text-green-600",
     services: [
       "Bridal Package",
       "Party Package",
@@ -191,69 +185,87 @@ const servicesData = [
 
 export default function ServicesSection() {
   return (
-    <section data-aos="zoom-out"  className="relative bg-[#FFF6F2] py-20">
-      <div className="max-w-7xl mx-auto px-6">
-        
-        {/* HEADING */}
-        <div className="text-center mb-16">
-          <p className="text-orange-400 uppercase tracking-widest text-sm font-semibold">
-            WHAT WE DO
-          </p>
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mt-3">
-            Our Services
-          </h2>
-          <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
-            Best Salon Services in Agra – Makeup, Hair, Skin & Spa
-          </p>
-        </div>
+ <section
+  data-aos="zoom-out"
+  className="relative py-24 
+  bg-gradient-to-br from-[#E8E3FF] via-[#d95626] to-[#E6F0FF]"
+>
+  <div className="max-w-7xl mx-auto px-6">
 
-        {/* SERVICES GRID */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {servicesData.map((category, index) => {
-            const Icon = category.icon;
-            
-            return (
-              <div
-                key={index}
-                className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition group"
-              >
-                {/* Icon with dot */}
-                <div className={`mx-auto mb-5 w-20 h-20 ${category.color} rounded-full flex items-center justify-center relative`}>
-                  <div className="absolute top-3 right-3 w-6 h-6 bg-orange-400 rounded-full"></div>
-                  <Icon className={`w-10 h-10 ${category.iconColor}`} strokeWidth={1.5} />
-                </div>
+    {/* HEADING */}
+    <div className="text-center mb-16">
+      <p className="text-[#6A4CC3] uppercase tracking-[0.3em] text-xs font-semibold">
+        WHAT WE DO
+      </p>
 
-                {/* Category Name */}
-                <h3 className="text-lg font-bold text-gray-900 mb-4 text-center">
-                  {category.category}
-                </h3>
+      <h2 className="text-4xl md:text-5xl font-bold text-[#2E1F55] mt-3">
+        Our Services
+      </h2>
 
-                {/* Services List */}
-                <ul className="space-y-2 mb-5">
-                  {category.services.map((service, idx) => (
-                    <li key={idx} className="text-sm text-gray-600 flex items-start">
-                      <span className="text-orange-400 mr-2">•</span>
-                      <span>{service}</span>
-                    </li>
-                  ))}
-                </ul>
+      <p className="text-[#5D4E8F] mt-4 max-w-2xl mx-auto text-lg">
+        Best Salon Services in Agra – Makeup, Hair, Skin & Spa
+      </p>
+    </div>
 
-                {/* Read More Button */}
-                <button className="text-orange-400 font-semibold text-sm flex items-center justify-center mx-auto gap-1 hover:text-orange-500 transition">
-                  READ MORE <span className="text-orange-300">⊕</span>
-                </button>
-              </div>
-            );
-          })}
-        </div>
+    {/* SERVICES GRID */}
+    <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+      {servicesData.map((category, index) => (
+        <div
+          key={index}
+          className="
+            bg-white 
+            border border-[#E0D6FF] 
+            rounded-2xl p-6 
+            shadow-md 
+            hover:shadow-xl 
+            hover:border-[#7C5CF4] 
+            transition-all duration-300 group
+          "
+        >
+          {/* Image Box */}
+          <div
+            className={`
+              mx-auto mb-6 w-20 h-20 ${category.color} 
+              rounded-full flex items-center justify-center 
+              relative overflow-hidden
+              ring-2 ring-[#C8B8FF]
+            `}
+          >
+            <div className="absolute top-2 right-2 w-5 h-5 bg-[#A28CFF] rounded-full opacity-80"></div>
 
-        {/* CTA Section */}
-        {/* <div className="text-center mt-16">
-          <button className="bg-orange-400 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-orange-500 transition shadow-lg hover:shadow-xl">
-            Book Your Appointment
+            <img
+              src={category.image}
+              alt={category.category}
+              className="w-full h-full object-cover rounded-full z-10"
+            />
+          </div>
+
+          {/* Category Name */}
+          <h3 className="text-lg font-bold text-[#2E1F55] mb-4 text-center">
+            {category.category}
+          </h3>
+
+          {/* Services List */}
+          <ul className="space-y-2 mb-6">
+            {category.services.map((service, idx) => (
+              <li key={idx} className="text-sm text-[#4F427A] flex items-start">
+                <span className="text-[#7C5CF4] mr-2">•</span>
+                <span>{service}</span>
+              </li>
+            ))}
+          </ul>
+
+          {/* Read More Button */}
+          <button className="text-[#7C5CF4] font-semibold text-sm flex items-center justify-center mx-auto gap-1 hover:text-[#6A4CC3] transition">
+            READ MORE <span className="text-[#A48BFF]">⊕</span>
           </button>
-        </div> */}
-      </div>
-    </section>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+
+
   );
 }

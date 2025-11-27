@@ -5,7 +5,7 @@ import img3 from "../../public/great-haircut.jpg";
 
 const EssentialElements = () => {
   return (
-    <section  className="w-full bg-[#f7f2ef] py-24 relative overflow-hidden">
+    <section  className="w-full bg-[#d9c426] py-24 relative overflow-hidden">
       
       {/* Heading */}
       <p className="text-center text-4xl font-light mb-24 relative z-10" style={{fontSize:"60px"}}>

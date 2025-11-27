@@ -11,6 +11,7 @@ import ScrollTop from './components/ScrollTop';
 import { useEffect } from 'react';
 import AOS from "aos";
 import "aos/dist/aos.css";
+import ReviewsSection from './components/Reviews';
 
 function App() {
 useEffect(() => {
@@ -44,6 +45,7 @@ useEffect(() => {
       <Booking />
       <EssentialElements/>
       <About />
+      <ReviewsSection />
       <Brands />
       <Footer />
       <ScrollTop />
