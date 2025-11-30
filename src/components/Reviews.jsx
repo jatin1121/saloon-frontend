@@ -42,7 +42,7 @@ export default function ReviewsSection() {
   ];
 
   return (
-    <div data-aos="fade-right" className="w-full bg-gradient-to-br from-gray-900 via-gray-800 to-black py-16 px-4">
+    <div data-aos="fade-right" className="w-full  py-16 px-4" style={{backgroundColor:"#000000"}}>
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">

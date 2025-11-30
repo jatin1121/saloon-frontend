@@ -28,7 +28,8 @@ export default function About() {
   return (
    <section
   id="about"
-  className="py-20 bg-gradient-to-br from-[#FF7A00] to-[#FF4C00]"
+  className="py-20 "
+  style={{backgroundColor:"#ae755a"}}
 >
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">

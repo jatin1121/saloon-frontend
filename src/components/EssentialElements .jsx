@@ -5,10 +5,10 @@ import img3 from "../../public/great-haircut.jpg";
 
 const EssentialElements = () => {
   return (
-    <section  className="w-full bg-[#d9c426] py-24 relative overflow-hidden">
+    <section  className="w-full  py-24 relative overflow-hidden" style={{backgroundColor:"#000000"}}>
       
       {/* Heading */}
-      <p className="text-center text-4xl font-light mb-24 relative z-10" style={{fontSize:"60px"}}>
+      <p className="text-center text-4xl  mb-24 relative z-10" style={{fontSize:"60px", color:"#fff"}}>
         Essential Elements For <br /> Beauty Salon
       </p>
 

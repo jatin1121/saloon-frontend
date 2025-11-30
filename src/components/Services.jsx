@@ -1,107 +1,12 @@
-// import { Scissors, Sparkles } from 'lucide-react';
+import beautysalloon from "../../public/beautysalloon.jpg"
 
-// const ladiesServices = [
-//   { name: "Hair Cut & Styling", icon: Scissors },
-//   { name: "Hair Coloring", icon: Sparkles },
-//   { name: "Hair Treatments", icon: Sparkles },
-//   { name: "Bridal Services", icon: Sparkles },
-//   { name: "Facial & Cleanup", icon: Sparkles },
-//   { name: "Makeup Services", icon: Sparkles }
-// ];
-
-// const gentsServices = [
-//   { name: "Hair Cut", icon: Scissors },
-//   { name: "Hair Styling", icon: Scissors },
-//   { name: "Hair Coloring", icon: Sparkles },
-//   { name: "Beard Styling", icon: Scissors },
-//   { name: "Facial", icon: Sparkles },
-//   { name: "Head Massage", icon: Sparkles }
-// ];
-
-// export default function Services() {
-//   return (
-//     <section className="py-20 bg-white">
-//       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-//         <div className="text-center mb-16">
-//           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-//             Our Services
-//           </h2>
-//           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-//             Premium beauty and grooming services tailored for ladies and gents
-//           </p>
-//         </div>
-
-//         <div className="grid lg:grid-cols-2 gap-12">
-//           <div id="ladies-services" className="bg-gradient-to-br from-pink-50 to-red-50 rounded-2xl p-8 shadow-lg hover:shadow-xl transition">
-//             <div className="text-center mb-8">
-//               <div className="w-20 h-20 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
-//                 <Sparkles className="w-10 h-10 text-white" />
-//               </div>
-//               <h3 className="text-3xl font-bold text-gray-900 mb-2">Ladies Services</h3>
-//               <p className="text-gray-600">Exclusive treatments for women</p>
-//             </div>
-
-//             <div className="grid sm:grid-cols-2 gap-4">
-//               {ladiesServices.map((service, index) => {
-//                 const Icon = service.icon;
-//                 return (
-//                   <div
-//                     key={index}
-//                     className="bg-white rounded-xl p-6 hover:shadow-lg transition cursor-pointer group"
-//                   >
-//                     <Icon className="w-8 h-8 text-red-600 mb-3 group-hover:scale-110 transition" />
-//                     <h4 className="text-lg font-semibold text-gray-900">{service.name}</h4>
-//                   </div>
-//                 );
-//               })}
-//             </div>
-
-//             <button className="w-full mt-8 bg-red-600 text-white py-4 rounded-lg text-lg font-semibold hover:bg-red-700 transition">
-//               View All Ladies Services
-//             </button>
-//           </div>
-
-//           <div id="gents-services" className="bg-gradient-to-br from-blue-50 to-gray-50 rounded-2xl p-8 shadow-lg hover:shadow-xl transition">
-//             <div className="text-center mb-8">
-//               <div className="w-20 h-20 bg-gray-900 rounded-full flex items-center justify-center mx-auto mb-4">
-//                 <Scissors className="w-10 h-10 text-white" />
-//               </div>
-//               <h3 className="text-3xl font-bold text-gray-900 mb-2">Gents Services</h3>
-//               <p className="text-gray-600">Professional grooming for men</p>
-//             </div>
-
-//             <div className="grid sm:grid-cols-2 gap-4">
-//               {gentsServices.map((service, index) => {
-//                 const Icon = service.icon;
-//                 return (
-//                   <div
-//                     key={index}
-//                     className="bg-white rounded-xl p-6 hover:shadow-lg transition cursor-pointer group"
-//                   >
-//                     <Icon className="w-8 h-8 text-gray-900 mb-3 group-hover:scale-110 transition" />
-//                     <h4 className="text-lg font-semibold text-gray-900">{service.name}</h4>
-//                   </div>
-//                 );
-//               })}
-//             </div>
-
-//             <button className="w-full mt-8 bg-gray-900 text-white py-4 rounded-lg text-lg font-semibold hover:bg-gray-800 transition">
-//               View All Gents Services
-//             </button>
-//           </div>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// }
-
-// REMOVE lucide-react imports
-// import { Brush, Scissors, Flower2, Hand, Sun, Sparkles, Package } from "lucide-react";
+export default function ServicesSection() {
+  
 
 const servicesData = [
   {
     category: "Makeup Services",
-    image: ".././../public/beautysalloon.jpg",
+    image: {beautysalloon},
     color: "bg-pink-100",
     services: [
       "Bridal Makeup",
@@ -182,27 +87,26 @@ const servicesData = [
     ]
   }
 ];
-
-export default function ServicesSection() {
   return (
  <section
   data-aos="zoom-out"
   className="relative py-24 
-  bg-gradient-to-br from-[#E8E3FF] via-[#d95626] to-[#E6F0FF]"
+  "
+  style={{backgroundColor:"#ae755a"}}
 >
   <div className="max-w-7xl mx-auto px-6">
 
     {/* HEADING */}
     <div className="text-center mb-16">
-      <p className="text-[#6A4CC3] uppercase tracking-[0.3em] text-xs font-semibold">
+      <p className="text-white uppercase tracking-[0.3em] text-xs font-semibold">
         WHAT WE DO
       </p>
 
-      <h2 className="text-4xl md:text-5xl font-bold text-[#2E1F55] mt-3">
+      <h2 className="text-4xl md:text-5xl font-bold text-white mt-3">
         Our Services
       </h2>
 
-      <p className="text-[#5D4E8F] mt-4 max-w-2xl mx-auto text-lg">
+      <p className="text-white mt-4 max-w-2xl mx-auto text-lg">
         Best Salon Services in Agra – Makeup, Hair, Skin & Spa
       </p>
     </div>

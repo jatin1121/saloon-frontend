@@ -174,7 +174,7 @@ export default function Hero() {
 //         <ChevronRight className="w-6 h-6 text-gray-900" />
 //       </button>
 //     </section>
-<section id="home" className="relative overflow-hidden" style={{ backgroundColor: "#EF4444" }}>
+<section id="home" className="relative overflow-hidden" style={{ backgroundColor: "#ae755a" }}>
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
     <div className="grid lg:grid-cols-2 gap-12 items-center">
       <div className="space-y-6" data-aos="fade-right">

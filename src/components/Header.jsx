@@ -6,7 +6,7 @@ export default function Header() {
   const [isServicesOpen, setIsServicesOpen] = useState(false);
 
   return (
-    <header className="bg-gradient-to-br from-gray-900 via-gray-800 to-black shadow-sm sticky top-0 z-50">
+    <header className=" sticky top-0 z-50" style={{backgroundColor:"#000000"}}>
       <div className="max-w-7xl mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-8 py-3">
         {/* Left Section - Logo */}
         <div className="flex items-center">

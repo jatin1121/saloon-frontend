@@ -10,8 +10,10 @@ const Demo = () => {
    <section
   data-aos="zoom-in"
   className="w-full py-20 
-  bg-gradient-to-br from-[#1A0F0A] to-[#3A1C10]
+  
   text-center"
+
+  style={{backgroundColor:"#000000"}}
 >
 
   {/* Top Heading */}

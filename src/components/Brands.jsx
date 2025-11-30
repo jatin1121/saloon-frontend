@@ -14,7 +14,7 @@ export default function Brands() {
     <section
   data-aos="flip-left"
   className="py-20"
-  style={{ background: "#92639c" }}
+  style={{ background: "#ae755a" }}
 >
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
@@ -78,13 +78,13 @@ export default function Brands() {
     {/* Bottom CTA Section */}
     <div className="
       mt-16 
-      bg-gradient-to-br from-[#FFD369] to-[#FFB627] 
+     
       rounded-2xl 
       p-12 
       text-center 
-      text-[#492400] 
+      text-white 
       shadow-2xl
-    ">
+    " style={{backgroundColor:"#000000"}}>
       <h3 className="text-3xl lg:text-4xl font-bold mb-4">
         Experience the Difference
       </h3>
