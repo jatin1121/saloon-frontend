@@ -1,4 +1,4 @@
-import beautysalloon from "../../public/beautysalloon.jpg"
+import haircut from "../../public/haircut.jpg";
 
 export default function ServicesSection() {
   
@@ -6,7 +6,7 @@ export default function ServicesSection() {
 const servicesData = [
   {
     category: "Makeup Services",
-    image: {beautysalloon},
+    image: haircut,
     color: "bg-pink-100",
     services: [
       "Bridal Makeup",
