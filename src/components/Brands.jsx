@@ -1,13 +1,13 @@
 export default function Brands() {
   const brands = [
-    { name: "L'Oréal Professional", img: "../../public/Loreal-PNG-Clipart.png" },
-    { name: "Kérastase", img: "../../public/paris.png" },
-    { name: "Olaplex", img: "../../public/olaplex3.webp" },
-    { name: "Matrix", img: "../../public/matrix.jpg" },
-    { name: "Wella Professionals", img: "../../public/wella.jpg" },
-    { name: "Schwarzkopf", img: "../../public/schwarzkopf.jpg" },
-    { name: "Redken", img: "../../public/redken.png" },
-    { name: "Paul Mitchell", img: "../../public/paul2.jpg" }
+    { name: "L'Oréal Professional", img: "/Loreal-PNG-Clipart.png" },
+    { name: "Kérastase", img: "/paris.png" },
+    { name: "Olaplex", img: "/olaplex3.webp" },
+    { name: "Matrix", img: "/matrix.jpg" },
+    { name: "Wella Professionals", img: "/wella.jpg" },
+    { name: "Schwarzkopf", img: "/schwarzkopf.jpg" },
+    { name: "Redken", img: "/redken.png" },
+    { name: "Paul Mitchell", img: "/paul2.jpg" }
   ];
 
   return (

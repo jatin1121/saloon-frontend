@@ -78,16 +78,28 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-red-600 mt-1" />
-                <span className="text-gray-400">Ruchi Mishra Makeover Studio, [Locality], Agra, Uttar Pradesh</span>
+                <span className="text-gray-400">31-A Nirav Nikunj ph-1, near holy public school, Sikandra, Agra, Uttar Pradesh 282007</span>
               </li>
-              <li className="flex items-start space-x-3">
+              {/* <li className="flex items-start space-x-3">
                 <Phone className="w-5 h-5 text-red-600 mt-1" />
                 <span className="text-gray-400">Call / WhatsApp: [Number]</span>
-              </li>
-              <li className="flex items-start space-x-3">
+              </li> */}
+ <li className="flex items-start space-x-3">
+  <Instagram className="w-5 h-5 text-pink-500 mt-1" />
+  <a
+    href="https://www.instagram.com/ruchimishra_makeover?igsh=MW1zb21lNTYzc2R4Nw%3D%3D"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-gray-400 hover:text-pink-400 transition"
+  >
+    @ruchimishra_makeover
+  </a>
+</li>
+
+              {/* <li className="flex items-start space-x-3">
                 <Mail className="w-5 h-5 text-red-600 mt-1" />
                 <span className="text-gray-400">Email: [Email ID]</span>
-              </li>
+              </li> */}
               <li className="flex items-start space-x-3">
                 <span className="text-gray-400">🕒 Timings: 10 AM – 8 PM (All Days)</span>
               </li>
