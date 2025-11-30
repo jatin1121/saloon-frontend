@@ -19,7 +19,7 @@ export default function Header() {
               className="object-contain"
             />
           </a> */}
-          <h1 className="text-1xl sm:text-2xl font-bold text-white tracking-wide">RUCHI MISHRA<span className="text-1xl sm:text-2xl text-red-500  font-semibold"> MAKEOVER</span> </h1>
+          <h1 className="text-1xl sm:text-2xl font-bold text-white tracking-wide">RUCHI MISHRA<span className="text-1xl sm:text-2xl   font-semibold" style={{ color : "#ae755a" }}> MAKEOVER</span> </h1>
         </div>
 
         {/* Right Section - Desktop */}

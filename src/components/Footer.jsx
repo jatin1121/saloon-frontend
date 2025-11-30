@@ -24,7 +24,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <h3 className="text-3xl font-bold mb-4">
-              Ruchi Mishra <span className="text-red-600">Makeover Studio</span>
+              Ruchi Mishra <span  style={{ color : "#ae755a" }}>Makeover Studio</span>
             </h3>
             <p className="text-gray-400 mb-6">
               Premium ladies’ makeover studio in Agra — Makeup, Hair, Skin & Bridal Makeovers.

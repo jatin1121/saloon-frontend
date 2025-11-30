@@ -1,5 +1,6 @@
 import { Calendar, Clock, MapPin, User } from 'lucide-react';
 import { useState } from 'react';
+import pallorblur from "../../public/pallor-blur.jpg"
 
 export default function Booking() {
   const [formData, setFormData] = useState({
@@ -28,7 +29,8 @@ export default function Booking() {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `url("https://www.lookssalon.in/public/images/formBg.webp")`,
+          // backgroundImage: `url("https://www.lookssalon.in/public/images/formBg.webp")`,
+         backgroundImage: `url("/pallor-blur.jpg")`,
         }}
       >
         <div className="absolute inset-0 bg-black/40 backdrop-blur-sm"></div>
@@ -135,8 +137,8 @@ export default function Booking() {
             {/* Submit Button */}
             <button
               onClick={handleSubmit}
-              className="w-full bg-red-600 text-white py-4 rounded-lg text-lg font-semibold hover:bg-red-700 transition shadow-lg hover:shadow-xl transform hover:scale-[1.02] active:scale-[0.98]"
-            >
+              className="w-full  text-white py-4 rounded-lg text-lg font-semibold  transition shadow-lg hover:shadow-xl transform hover:scale-[1.02] active:scale-[0.98]"
+            style={{backgroundColor:"#ae755a"}}>
               Confirm Booking
             </button>
           </div>
